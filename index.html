@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>App Landing Site</title>
     <style type="text/css">
-    	.jumbotron {
-    		background-image: url(BG.jpeg)
-    	}
+    .jumbotron {
+        background-image: url(BG_bright.jpg);
+    }
     </style>
 </head>
 
@@ -41,13 +41,24 @@
         </div>
     </nav>
     <div class="jumbotron">
-      <h1 class="display-3">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
+        <h1 class="display-3">My Awesome App!</h1>
+        <p class="lead">This is WHY you should download this fantastic app!</p>
+        <hr class="my-4">
+        <p>Want to know more? Join our mailing list!</p>
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-sm-3">
+                    <label class="sr-only" for="inlineFormInputGroupUsername">Your Email</label>
+                    <div class="input-group mb-2 mb-sm-0">
+                        <div class="input-group-addon">@</div>
+                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </form>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

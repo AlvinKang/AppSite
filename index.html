@@ -11,6 +11,15 @@
     <style type="text/css">
     .jumbotron {
         background-image: url(BG_bright.jpg);
+        text-align: center;
+    }
+
+    #inner-form {
+        width: 300px;
+    }
+
+    #appSummary {
+    	text-align: center;
     }
     </style>
 </head>
@@ -46,19 +55,23 @@
         <hr class="my-4">
         <p>Want to know more? Join our mailing list!</p>
         <form>
-            <div class="form-row align-items-center">
-                <div class="col-sm-3">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">Your Email</label>
-                    <div class="input-group mb-2 mb-sm-0">
-                        <div class="input-group-addon">@</div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your email">
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div class="form-group mx-auto" id="inner-form">
+                <label class="sr-only" for="email">Your Email</label>
+                <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input type="email" class="form-control" id="email" placeholder="Your email">
                 </div>
             </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
         </form>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="appSummary">
+            <div class="col">
+                <h1>Why This App Is Awesome</h1>
+                <p class="lead">Summary, again of your app's awesomeness</p>
+            </div>
+        </div>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
